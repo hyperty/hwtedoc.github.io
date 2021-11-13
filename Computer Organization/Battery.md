@@ -1,6 +1,8 @@
 ---
 title: Battery
 ---
+# Battery Brief introduction
+
 # Lithium Battery
 
 * 锂电池\(Lithium battery\)：严格意义上的锂电池是锂原电池，内含纯态的锂金属，为一次性使用，不可充电。
