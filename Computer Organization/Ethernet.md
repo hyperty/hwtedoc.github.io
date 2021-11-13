@@ -24,13 +24,7 @@ title: Ethernet
 
 2004年3月，IEEE批准铜缆10G以太网标准802.3ak，新标准将作为10GBASE-CX4实施，提供双轴电缆上的10Gbps的速率。
 
-<center>
-    <img src="img/Ethernet0.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图1. Ethernet 发展历史
-    </div>
-</center>
+![图1. Ethernet 发展历史](Ethernet/img/Ethernet0.png)
 
 二、简述**Ethernet**
 
@@ -48,13 +42,7 @@ title: Ethernet
 
 早期的以太网一般是一根同轴电缆连接多台终端，因此通过这种连接方式形成的网络叫做共享介质网络。IEEE802.3中使用两种同轴电缆，分别为10BASE5（又名粗缆）和10BASE2（又名细缆），并且都保持10Mbps的传输速率。
 
-<center>
-    <img src="img/同轴电缆.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图2. 同轴电缆
-    </div>
-</center>
+![图2. 同轴电缆](Ethernet/img/同轴电缆.png)
 
 1）粗缆
 
@@ -62,24 +50,13 @@ title: Ethernet
 Interface
 Card，网卡）之间通过收发器电缆连接。
 
-<center>
-    <img src="img/粗缆.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图3. 粗缆
-    </div>
-</center>
+![图3. 粗缆](Ethernet/img/粗缆.png)
 
 2）细缆
 与粗缆不同的是，10BASE2通过BNC（又称T型连接器）与设备连接，但是新增线路时需要切断电缆。
 
-<center>
-    <img src="img/细缆.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图4. 细缆
-    </div>
-</center>
+![图4. 细缆](Ethernet/img/细缆.png)
+
 
 \[二\] 双绞线
 
@@ -95,13 +72,8 @@ Card，网卡）之间通过收发器电缆连接。
 Pair，STP）和非屏蔽双绞线（Unshielded Twisted
 Pair，UTP）两种。UTP的内部有一个个绕对，而STP在套层和绕对之间添加了一个绝缘的屏蔽层，可以防止电磁的干扰，如图：
 
-<center>
-    <img src="img/双绞线.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图5. 双绞线
-    </div>
-</center>
+![图5. 双绞线](Ethernet/img/双绞线.png)
+
 虽然STP比UTP的抗干扰性更强，但布线复杂和昂贵的价格是它的主要缺点。
 
 双绞线的标准
@@ -127,49 +99,31 @@ Pair，UTP）两种。UTP的内部有一个个绕对，而STP在套层和绕对�
 
 多模光纤的纤芯直径较大，易于制作，可以同时传播多种波长的光（通过折射）。一般实现100Mbps左右的通讯可以采用多模光纤。但是因为模间色散程度较大，所以多模光纤的传输距离一般只有几公里。
 
-<center>
-    <img src="img/多模光纤.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图6. 多模光纤
-    </div>
-</center>
+
+![图6. 多模光纤](Ethernet/img/多模光纤.png)
+
 
 2）单模光纤
 
 单模光纤的纤芯一般为数微米，对制造工艺的要求较高。由于其中模间的色散很小（材料色散和波导色散），所以适用于远距离的高速通讯。
 
-<center>
-    <img src="img/单模光纤.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图7. 单模光纤
-    </div>
-</center>
+
+![图7. 单模光纤](Ethernet/img/单模光纤.png)
 
 四、**CSMA/CD**共享介质以太网
 
 带冲突检测的载波侦听多路访问(CSMA/CD)技术规定了多台电脑共享一个通道的方法。这项技术最早出现在1960年代由夏威夷大学开发的ALOHAnet，它使用无线电波为载体。这个方法要比令牌环网或者主控制网简单。当某台电脑要发送信息时，在以下行动与状态之间进行转化：
 
-<center>
-    <img src="img/CSMACD.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图8. CSMA/CD
-    </div>
-</center>
+![图8. CSMA/CD](Ethernet/img/CSMACD.png)
+
 
 五、传输信道**-**差分信道
 
 差分传输是一种信号传输的技术，区别于传统的一根信号线一根地线的做法，差分传输在这两根线上都传输信号，这两个信号的振幅相同，相位相反。在这两根线上的传输的信号就是差分信号。信号接收端比较这两个电压的差值来判断发送端发送的逻辑状态。在电路板上，差分走线必须是等长、等宽、紧密靠近、且在同一层面的两根线。
 
-<center>
-    <img src="img/差分信号.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图9. 差分信号
-    </div>
-</center>
+
+![图9. 差分信号](Ethernet/img/差分信号.png)
+
 
 六、以太网类型
 
@@ -277,32 +231,15 @@ Pair，UTP）两种。UTP的内部有一个个绕对，而STP在套层和绕对�
 
 J185 SMT QT Ethernet test
 
-<center>
-    <img src="img/EthernetTest.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图10. J185 SMT QT Ethernet test
-    </div>
-</center>
+
+![图10. J185 SMT QT Ethernet test](Ethernet/img/EthernetTest.png)
 
 Ethernet 吞吐量 (Throughput)的测试
 
 J185 EthernetDOE
 
-<center>
-    <img src="img/EthernetDOE.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图11. J185 EthernetDOE
-    </div>
-</center>
+![图11. J185 EthernetDOE](Ethernet/img/EthernetDOE.png)
 
 J160 Ethernet Controller Loop back throughout test
 
-<center>
-    <img src="img/Ethernetloopbackthroughput.png" width=500px //>
-    <br>
-    <div style="color:orange; solid:#d9d9d9; display:inline-block; color:#999; font-size:14px">
-        图12. J160 Ethernet Controller Loop back throughout test
-    </div>
-</center>
+![图12. J160 Ethernet Controller Loop back throughout test](Ethernet/img/Ethernetloopbackthroughput.png)
