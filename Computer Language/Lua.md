@@ -1,6 +1,7 @@
 ---
 title: Lua introduction
 ---
+# Lua introduction
 
 # 一、环境安装
 

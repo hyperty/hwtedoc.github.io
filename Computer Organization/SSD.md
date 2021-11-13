@@ -3,8 +3,10 @@ author:
     name: Joy Li
     email: Joy.Li12@quantacn.com
 date: 2020-1-9
-title: 浅析SSD
+title: SSD
 ---
+
+# SSD Brief introduction
 
 # 与中国女排同命运的SSD(一)
 

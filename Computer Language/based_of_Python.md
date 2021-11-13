@@ -4,6 +4,7 @@ title: Python Introduction -Allen
 author: Allen Wang
 ---
 
+# Python Introduction
 
 # Introduction
 * python语言是一种面向对象的解释型计算机程序设计语言

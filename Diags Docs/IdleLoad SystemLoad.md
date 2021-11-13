@@ -3,7 +3,7 @@ author:
   name: Anna Ning
   email: Anna.Ning@quantacn.com
 date: 2020-2-12
-title: Smokey IdleLoad & SystemLoad
+title: IdleLoad & SystemLoad
 ---
 
 ![docDingDong300](Smokey/img/docDingDong300.png)

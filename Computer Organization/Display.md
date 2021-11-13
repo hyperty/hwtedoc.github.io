@@ -3,7 +3,10 @@ author:
     name: Yume Wu
     email: yume.wu@quantacn.com
 date: 2020-1-9
+title: Display Introduce
 ---
+
+# Display Introduce
 
 ![docDingDong](Display/Display/docDingDong300.png)
 
