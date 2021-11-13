@@ -1,0 +1,37 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: HWTE
+  label: Docs
+links:
+- text: Getting Started
+  link: https://retype.com/guides/getting-started/
+footer:
+  copyright: "&copy; Copyright {{ year }}. HWTE All rights reserved."
+
+edit:
+  repo: github.com/hwtedoc/hwtedoc.github.io
+
+meta:
+  title: " | HWTE Docs - All your knowledge starts from here."
+
+links:
+ - text: Home
+    link: /README.md
+    icon: home
+
+  - text: Issues
+    link: https://github.com/hwtedoc/hwtedoc.github.io/issues
+    icon: issue-opened
+    target: blank
+
+  - text: Discussions
+    link: https://github.com/hwtedoc/hwtedoc.github.io/discussions
+    icon: comment-discussion
+    target: blank
+
+  - text: GitHub
+    link: https://github.com/hwtedoc/hwtedoc.github.io/issues
+    icon: mark-github
+    target: blank
