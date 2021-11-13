@@ -1,6 +1,7 @@
-# Parse FCT
-
-# CM-Diags-Allen.wang
+---
+author: Allen Wang
+title: Parse FCT
+---
 
 # Purpose
 
@@ -15,7 +16,7 @@
 
 python3 /Users/allen/Desktop/Allen\_5\.0/parse\_csv\_2\.py \-h
 
-<img src="img/Parse_csv_ppt0.png" width=500px />
+![](pars_csv_md/img/Parse_csv_ppt0.png)
 
 * 参数
   * \-rP    资源路径   1\.可以是资源文件夹路径，2\.也可以是资源文件的路径
@@ -32,14 +33,15 @@ python3 /Users/allen/Desktop/Allen\_5\.0/parse\_csv\_2\.py \-h
   * 处理FCT有关的文件
     * find\_FCT\_diags\(df,save\_name,export\_path\)
 
-<img src="img/Parse_csv_ppt1.png" width=500px />
+![](pars_csv_md/img/Parse_csv_ppt1.png)
 
-<img src="img/Parse_csv_ppt2.png" width=500px />
+![](pars_csv_md/img/Parse_csv_ppt2.png)
 
-<img src="img/Parse_csv_ppt3.png" width=500px />
+![](pars_csv_md/img/Parse_csv_ppt3.png)
 
 文件名：TESTNAME（DUT\_Info）
 
+```
 Enable："1"
 
 TestName：SUBTESTNAME
@@ -55,6 +57,7 @@ Command:PARAM1
 Pattern:PARAM2
 
 Timeout:TIMEOUT
+```
 
 # Script Argument
 

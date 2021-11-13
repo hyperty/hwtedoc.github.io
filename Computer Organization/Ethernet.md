@@ -1,10 +1,9 @@
-**Ethernet**
-
-Version 1.0
-
-Jan. 14, 2019
-
-Authors: Whiteny Ren        Whitney.Ren@quantacn.com
+---
+author: 
+    name: Whiteny Ren
+    email: Whitney.Ren@quantacn.com
+date: 2019-1-14
+---
 
 一、**Ethernet**发展历史
 

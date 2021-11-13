@@ -2,14 +2,11 @@
 author: 
   name: Anna Ning
   email: Anna.Ning@quantacn.com
-category:
-  - Docs
-  - turtorial
 date: 2020-1-9
 title: Python Module Argparse
 ---
 
-![docDingDong](./img/docDingDong300.png)
+![docDingDong](./Python_Argparse/img/docDingDong300.png)
 
 # Module Argparse
 
@@ -82,7 +79,7 @@ title: Python Module Argparse
     * parser\.add\_argument\('\-p'\,…\)
     * parser\.add\_argument\('\-v'\,…\)
 
-<img src="img/argparse0.png" width=500px />
+![](Python_Argparse/img/argparse0.png)
 
 * Case analysis
   * 4\.对传入的参数进行解析
@@ -90,17 +87,17 @@ title: Python Module Argparse
   * 5\.调用解析后的参数
     * args\.arguments
 
-<img src="img/argparse1.png" width=500px />
+![](Python_Argparse/img/argparse1.png)
 
 Case analysis
 
-<img src="img/argparse2.png" width=500px />
+![](Python_Argparse/img/argparse2.png)
 
-<img src="img/argparse3.png" width=500px />
+![](Python_Argparse/img/argparse3.png)
 
-<img src="img/argparse4.png" width=500px />
+![](Python_Argparse/img/argparse4.png)
 
-<img src="img/argparse5.png" width=500px />
+![](Python_Argparse/img/argparse5.png)
 
 Please pick one from the following commands and write a simple program with argparse\.
 

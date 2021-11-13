@@ -1,14 +1,12 @@
+---
+author:
+  name: Yume Wu
+  email: yume.wu@quantacn.com
+date: 2020-1-9
+title: MacOS Introduce
+---
 
 ![docDingDong](./MacOS_Introduce/docDingDong300.png)
-# MacOS Introduce
-Version 1.0
-Jan 09, 2020
-
-Authors:
-Yume Wu         yume.wu@quantacn.com
-
-# Content
-[toc]
 
 # Revision History
 
@@ -164,7 +162,7 @@ https://github.com/iglance/iGlance
 
 https://github.com/davehax/macos-network-monitor
 
-<img src="MacOS_Introduce/yume09234.png" width=500px />
+![](MacOS_Introduce/yume09234.png)
 
 ```shell
 
@@ -178,7 +176,7 @@ https://github.com/davehax/macos-network-monitor
 
 ```
 
-<img src="MacOS_Introduce/yume09235.png" width=500px />
+![](MacOS_Introduce/yume09235.png)
 
 ```shell
 
@@ -249,7 +247,7 @@ To be continued : docker
 
 1. DOS : Disk Operating System
 
-<img src="MacOS_Introduce/yume09238.png" width=500px />
+![](MacOS_Introduce/yume09238.png)
 
 2.
 |Operation | 发布时间       |
@@ -287,7 +285,7 @@ CPU：Intel,  AMD
 
 Linux就是一套作業系統！如同下圖所示,  Linux就是核心與系統呼叫介面那兩層。
 
-<img src="MacOS_Introduce/yume09239.gif" width=337px />
+![](MacOS_Introduce/yume09239.gif)
 
 ```shell
 MCA9020096:~ yume$ uname -a

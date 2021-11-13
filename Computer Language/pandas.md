@@ -1,16 +1,9 @@
-![docDingDong300](./img/docDingDong300.png)
-
-# Python Module Pandas
-
-Version 1.0
-Feb 12, 2020
-
-Authors:
-Anna Ning         Anna.Ning@quantacn.com
-
-# Content
-
-[TOC]
+---
+author: Anna Ning
+title: Python Module Pandas
+date: 2020-2-12
+---
+![docDingDong300](Pandas/Pandas/img/docDingDong300.png)
 
 # Pandas 概述
 
@@ -49,19 +42,19 @@ Anna Ning         Anna.Ning@quantacn.com
 
 * 创建Series
 
-<img src="img/pandas0.png" width=500px />
+![](Pandas/img/pandas0.png)
 
-<img src="img/pandas1.png" width=500px />
+![](Pandas/img/pandas1.png)
 
 * 查看series的前两行
 
-<img src="img/pandas2.png" width=500px />
+![](Pandas/img/pandas2.png)
 
-<img src="img/pandas3.png" width=500px />
+![](Pandas/img/pandas3.png)
 
-<img src="img/pandas4.png" width=500px />
+![](Pandas/img/pandas4.png)
 
-<img src="img/pandas5.png" width=422px />
+![](Pandas/img/pandas5.png)
 
 ## Pandas 数据结构---DataFrame
 
@@ -79,25 +72,25 @@ Anna Ning         Anna.Ning@quantacn.com
 
 * 创建DataFrame
 
-<img src="img/pandas6.png" width=500px />
+![](Pandas/img/pandas6.png)
 
-<img src="img/pandas7.png" width=500px />
+![](Pandas/img/pandas7.png)
 
-<img src="img/pandas8.png" width=500px />
+![](Pandas/img/pandas8.png)
 
-<img src="img/pandas9.png" width=500px />
+![](Pandas/img/pandas9.png)
 
 * 常用的DataFrame方法
 
-<img src="img/pandas10.png" width=500px />
+![](Pandas/img/pandas10.png)
 
-<img src="img/pandas11.png" width=500px />
+![](Pandas/img/pandas11.png)
 
-<img src="img/pandas12.png" width=500px />
+![](Pandas/img/pandas12.png)
 
-<img src="img/pandas13.png" width=500px />
+![](Pandas/img/pandas13.png)
 
-<img src="img/pandas14.png" width=500px />
+![](Pandas/img/pandas14.png)
 
 # DataFrame 选择数据
 
@@ -125,43 +118,43 @@ Anna Ning         Anna.Ning@quantacn.com
 
 * 第一次切片选择 第二次按照筛选条件进行选择
 
-<img src="img/pandas15.png" width=500px />
+![](Pandas/img/pandas15.png)
 
-<img src="img/pandas16.png" width=294px />
+![](Pandas/img/pandas16.png)
 
 ## 根据loc行标签选择数据
 
 * loc\[index\, column\_name\]\,选取指定行和列的数据
 
-<img src="img/pandas17.png" width=500px />
+![](Pandas/img/pandas17.png)
 
-<img src="img/pandas18.png" width=500px />
+![](Pandas/img/pandas18.png)
 
 ## 根据iloc序列进行选择数据
 
 * iloc\[row\_index\, column\_index\]
 
-<img src="img/pandas19.png" width=500px />
+![](Pandas/img/pandas19.png)
 
-<img src="img/pandas20.png" width=500px />
+![](Pandas/img/pandas20.png)
 
 ## 根据混合的ix
 
 * __DataFrame\.ix__ \[行索引的名称或位置或者条件\,列索引名称或位置\]
 
-<img src="img/pandas21.png" width=500px />
+![](Pandas/img/pandas21.png)
 
-<img src="img/pandas22.png" width=188px />
+![](Pandas/img/pandas22.png)
 
-<img src="img/pandas23.png" width=346px />
+![](Pandas/img/pandas23.png)
 
 ## 判断筛选
 
 * 输出第z列中为N的数据
 
-<img src="img/pandas24.png" width=500px />
+![](Pandas/img/pandas24.png)
 
-<img src="img/pandas25.png" width=500px />
+![](Pandas/img/pandas25.png)
 
 # DataFrame 设置数据
 
@@ -174,33 +167,33 @@ Anna Ning         Anna.Ning@quantacn.com
 
 * 设置第2行y列，第2行2列值分别为777\,999
 
-<img src="img/pandas26.png" width=500px />
+![](Pandas/img/pandas26.png)
 
-<img src="img/pandas27.png" width=500px />
+![](Pandas/img/pandas27.png)
 
 ## 根据条件设置
 
 * 设置y列等于N的所在行值为666
 
-<img src="img/pandas28.png" width=500px />
+![](Pandas/img/pandas28.png)
 
-<img src="img/pandas29.png" width=460px />
+![](Pandas/img/pandas29.png)
 
 ## 根据行或列设置
 
 * 设置y列值为222，设置1行之前的数据为111
 
-<img src="img/pandas30.png" width=500px />
+![](Pandas/img/pandas30.png)
 
-<img src="img/pandas31.png" width=500px />
+![](Pandas/img/pandas31.png)
 
 ## 添加数据
 
 * 增加一列
 
-<img src="img/pandas32.png" width=500px />
+![](Pandas/img/pandas32.png)
 
-<img src="img/pandas33.png" width=500px />
+![](Pandas/img/pandas33.png)
 
 # DataFrame 处理丢失数据
 
@@ -213,21 +206,21 @@ Anna Ning         Anna.Ning@quantacn.com
 
 * 使用dropna\(\)函数去掉NaN的行或列
 
-<img src="img/pandas34.png" width=500px />
+![](Pandas/img/pandas34.png)
 
-<img src="img/pandas35.png" width=446px />
+![](Pandas/img/pandas35.png)
 
 * 使用fillna\(\)函数替换NaN值
 
-<img src="img/pandas36.png" width=500px />
+![](Pandas/img/pandas36.png)
 
-<img src="img/pandas37.png" width=472px />
+![](Pandas/img/pandas37.png)
 
 ## 使用isnull\(\)函数判断数据是否丢失
 
-<img src="img/pandas38.png" width=500px />
+![](Pandas/img/pandas38.png)
 
-<img src="img/pandas39.png" width=500px />
+![](Pandas/img/pandas39.png)
 
 # Pandas 导入导出
 
@@ -244,17 +237,17 @@ Anna Ning         Anna.Ning@quantacn.com
 
 ## pandas读取csv格式的资料
 
-<img src="img/pandas40.png" width=500px />
+![](Pandas/img/pandas40.png)
 
-<img src="img/pandas41.png" width=500px />
+![](Pandas/img/pandas41.png)
 
 ## pandas把资料存储为json格式
 
-<img src="img/pandas42.png" width=500px />
+![](Pandas/img/pandas42.png)
 
-<img src="img/pandas43.png" width=500px />
+![](Pandas/img/pandas43.png)
 
-<img src="img/pandas44.png" width=269px />
+![](Pandas/img/pandas44.png)
 
 # Pandas 合并concat
 
@@ -273,21 +266,21 @@ Anna Ning         Anna.Ning@quantacn.com
 
 ## axis合并
 
-<img src="img/pandas45.png" width=500px />
+![](Pandas/img/pandas45.png)
 
-<img src="img/pandas46.png" width=500px />
+![](Pandas/img/pandas46.png)
 
 ## join合并
 
-<img src="img/pandas47.png" width=500px />
+![](Pandas/img/pandas47.png)
 
-<img src="img/pandas48.png" width=500px />
+![](Pandas/img/pandas48.png)
 
 ## append\(\)函数添加合并
 
-<img src="img/pandas49.png" width=500px />
+![](Pandas/img/pandas49.png)
 
-<img src="img/pandas50.png" width=448px />
+![](Pandas/img/pandas50.png)
 
 ## Pandas合并merge
 
@@ -304,27 +297,27 @@ Anna Ning         Anna.Ning@quantacn.com
 * 根据key合并
   * 依据一组key合并
 
-<img src="img/pandas51.png" width=500px />
+![](Pandas/img/pandas51.png)
 
-<img src="img/pandas52.png" width=280px />
+![](Pandas/img/pandas52.png)
 
 * 根据key合并
   * 依据两组key合并
 
-<img src="img/pandas54.png" width=500px />
+![](Pandas/img/pandas54.png)
 
-<img src="img/pandas53.png" width=500px />
+![](Pandas/img/pandas53.png)
 
 * Indicator合并
 
-<img src="img/pandas55.png" width=500px />
+![](Pandas/img/pandas55.png)
 
-<img src="img/pandas56.png" width=440px />
+![](Pandas/img/pandas56.png)
 
 * 根据index合并
 
-<img src="img/pandas57.png" width=500px />
+![](Pandas/img/pandas57.png)
 
-<img src="img/pandas58.png" width=500px />
+![](Pandas/img/pandas58.png)
 
 # END

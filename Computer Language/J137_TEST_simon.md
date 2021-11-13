@@ -1,6 +1,7 @@
-# J137 TEST
-
-# 
+---
+author: Simon Guo
+title : Sell Script
+---
 
 # 测试环境
 
@@ -157,13 +158,13 @@ TESD LOG
 
 GOKU
 
-<img src="img/J137_TEST_simon0.png" width=500px />
+![](shell/img/J137_TEST_simon0.png)
 
-<img src="img/J137_TEST_simon1.png" width=500px />
+![](shell/img/J137_TEST_simon1.png)
 
-<img src="img/J137_TEST_simon2.png" width=500px />
+![](shell/img/J137_TEST_simon2.png)
 
-<img src="img/J137_TEST_simon3.png" width=500px />
+![](shell/img/J137_TEST_simon3.png)
 
 # J137测试内容
 

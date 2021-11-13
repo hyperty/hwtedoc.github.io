@@ -1,47 +1,8 @@
-# Python Module Numpy
-CM-MacDiags 2019-12-03
-
-# Agenda
-
-NumPy概述
-
-NumPy安装与引用
-
-NumPy Ndarray对象
-
-NumPy数据类型
-
-NumPy数组属性
-
-Numpy创建ndarray数组
-
-Numpy切片和索引
-
-Numpy高级索引
-
-Ndarray的矢量化计算
-
-Ndarray数组的转置和轴对换
-
-Ndarray通用函数
-
-NumPy的where函数使用
-
-Ndarray常用的统计方法
-
-Ndarray数组的去重以及集合运算
-
-Ndarray数组重塑
-
-Ndarray数组的拆分与合并
-
-Ndarray数组的元素重复操作
-
-Numpy IO
-
-Numpy中的线性代数（附件）
-
-Numpy中的随机数生成 （附件）
+---
+author: CM-MacDiags
+date: 2019-12-3
+title: Python Module Numpy
+---
 
 # Numpy 概述
 
@@ -75,9 +36,9 @@ Numpy中的随机数生成 （附件）
   * import numpy
   * import numpy as np
 
-<img src="img/Python_Module_Numpy0.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy0.png)
 
-<img src="img/Python_Module_Numpy1.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy1.png)
 
 # NumPy Ndarray 对象
 
@@ -90,13 +51,13 @@ Numpy中的随机数生成 （附件）
 * dtype参数
 * <span style="color:#B51600">说明：</span>  _ndarray_  _对象_ 由计算机 _内存的连续一维部分_ 组成，并结合 _索引模式_ ，将每个元素映射到内存块中的一个位置。内存块以行顺序\(C样式\)或列顺序\(FORTRAN或MatLab风格\)来保存元素。
 
-<img src="img/Python_Module_Numpy2.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy2.png)
 
-<img src="img/Python_Module_Numpy3.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy3.png)
 
-<img src="img/Python_Module_Numpy4.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy4.png)
 
-<img src="img/Python_Module_Numpy5.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy5.png)
 
 # NumPy 数据类型
 
@@ -118,7 +79,7 @@ Numpy中的随机数生成 （附件）
   * dtype实例
 * 每个内建类型都有一个唯一定义它的字符代码，如下：
 
-<img src="img/Python_Module_Numpy6.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy6.png)
 
 # NumPy 数组属性
 
@@ -130,13 +91,13 @@ NumPy的数组中比较重要ndarray对象属性有：
 * 实例ndarray\.itemsize，以字节的形式返回数组中每一个元素的大小。
   * 例如，一个元素类型为float64的数组itemsize属性值为8\(float64占用64个bits，每个字节长度为8，所以64/8，占用8个字节），又如，一个元素类型为complex32的数组itemsize属性为4（32/8）。
 
-<img src="img/Python_Module_Numpy7.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy7.png)
 
-<img src="img/Python_Module_Numpy8.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy8.png)
 
 ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
 
-<img src="img/Python_Module_Numpy9.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy9.png)
 
 # Numpy 创建ndarray数组
 
@@ -148,54 +109,54 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
       * numpy\.empty\(shape, dtype = float, order = 'C'\)
 * <span style="color:#333333"> __注意__ </span>  <span style="color:#333333">−</span>  <span style="color:#333333">数组元素为随机值，因为它们未初始化。</span>
 
-<img src="img/Python_Module_Numpy10.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy10.png)
 
   * numpy\.zeros方法创建指定大小的数组，数组元素以0来填充：
     * numpy\.zeros\(shape, dtype = float, order = 'C'\)
 
-<img src="img/Python_Module_Numpy11.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy11.png)
 
   * numpy\.ones方法创建指定形状的数组，数组元素以1来填充：
     * numpy\.ones\(shape, dtype = None, order = 'C'\)
 
-<img src="img/Python_Module_Numpy12.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy12.png)
 
   * numpy\.asarray方法类似numpy\.array，但numpy\.asarray参数只有三个，比numpy\.array少两个。
     * numpy\.asarray\(a, dtype = None, order = None\)
 
-<img src="img/Python_Module_Numpy13.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy13.png)
 
   * numpy\.frombuffer方法用于实现动态数组，接受buffer输入参数，以流的形式读入转化成ndarray对象。
     * numpy\.frombuffer\(buffer, dtype = float, count = \-1, offset = 0\)
 * <span style="color:#333333"> _注意：_ </span>  <span style="color:#333333"> buffer</span><span style="color:#333333"> _是字符串的时候，_ </span> <span style="color:#333333"> Python3</span>  <span style="color:#333333"> 默认</span> <span style="color:#333333"> str </span> <span style="color:#333333"> _是_ </span>  <span style="color:#333333"> _Unicode_ </span>  <span style="color:#333333"> 类型，所以要转成</span>  <span style="color:#333333"> bytestring</span>  <span style="color:#333333"> _在原_ </span>  <span style="color:#333333"> str </span>  <span style="color:#333333"> _前加上_ </span>  <span style="color:#333333"> b </span>  <span style="color:#333333"> _。_ </span>
 
-<img src="img/Python_Module_Numpy14.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy14.png)
 
   * numpy\.fromiter方法从可迭代对象中建立ndarray对象，返回一维数组。
     * numpy\.fromiter\(iterable, dtype, count=\-1\)
 
-<img src="img/Python_Module_Numpy15.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy15.png)
 
   * numpy\.arange   numpy包中的使用arange函数创建数值范围并返回ndarray对象，函数格式如下：
     * numpy\.arange\(start, stop, step, dtype\)
     * 根据start与stop指定的范围以及step设定的步长，生成一个ndarray。
 
-<img src="img/Python_Module_Numpy16.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy16.png)
 
   * <span style="color:#4D4D4D">numpy\.linspace</span>  <span style="color:#4D4D4D">函数用于创建一个一维数组，数组是一个等差数列构成的，格式如下：</span>
     * <span style="color:#4D4D4D">numpy\.linspace</span>  <span style="color:#666600">(</span>  <span style="color:#4D4D4D">start</span>  <span style="color:#666600">,</span>  <span style="color:#4D4D4D">stop</span>  <span style="color:#666600">,</span>  <span style="color:#4D4D4D">num</span>  <span style="color:#666600">=</span>  <span style="color:#006666">50</span>  <span style="color:#666600">,</span>  <span style="color:#4D4D4D">endpoint</span>  <span style="color:#666600">=</span>  <span style="color:#000088">True</span>  <span style="color:#666600">,</span>  <span style="color:#4D4D4D">retstep</span>  <span style="color:#666600">=</span>  <span style="color:#000088">False</span>  <span style="color:#666600">,</span>  <span style="color:#4D4D4D">dtype</span>  <span style="color:#666600">=</span>  <span style="color:#000088">None</span>  <span style="color:#666600">\)</span>
 
-<img src="img/Python_Module_Numpy17.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy17.png)
 
   * numpy\.logspace函数用于创建一个于等比数列。格式如下：
     * numpy\.logspace\(start, stop, num=50, endpoint=True, base=10\.0, dtype=None\)
     * base参数意思是取对数的时候log的下标
 
-<img src="img/Python_Module_Numpy18.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy18.png)
 
 # Numpy 索引和切片
 
-<img src="img/Python_Module_Numpy19.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy19.png)
 
 * 一维数组的索引：与Python的列表索引功能相似
 * 多维数组的索引：
@@ -213,25 +174,25 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
     * 整数数组索引
 * 以下实例获取了4X3数组中的四个角的元素。 行索引是\[0,0\]和\[3,3\]，而列索引是\[0,2\]和\[0,2\]。返回的结果是包含每个角元素的ndarray对象。
 
-<img src="img/Python_Module_Numpy20.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy20.png)
 
   * NumPy比一般的Python序列提供更多的索引方式。除了之前看到的用整数和切片的索引外，数组可以由整数数组索引、布尔索引及花式索引。
   * 整数数组索引
     * 可以借助切片:或…与索引数组组合。如下：
 
-<img src="img/Python_Module_Numpy21.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy21.png)
 
   * NumPy比一般的Python序列提供更多的索引方式。除了之前的用整数和切片的索引外，数组可以由整数数组索引、布尔索引及花式索引。
     * 布尔索引
 * 使用布尔数组作为索引。arr\[condition\]，condition为一个条件/多个条件组成的布尔数组。
 
-<img src="img/Python_Module_Numpy22.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy22.png)
 
   * NumPy比一般的Python序列提供更多的索引方式。除了之前看到的用整数和切片的索引外，数组可以由整数数组索引、布尔索引及花式索引。
     * 花式索引
 * 使用整型数组作为索引。
 
-<img src="img/Python_Module_Numpy23.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy23.png)
 
 # Ndarray矢量化计算
 
@@ -243,13 +204,13 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
   * 当前维度的值相等。
   * 当前维度的值有一个是1。
 
-<img src="img/Python_Module_Numpy24.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy24.png)
 
 # Ndarray 数组的转置和轴对换
 
 * 数组的转置/轴对换只会返回源数据的一个视图，不会对源数据进行修改。
 
-<img src="img/Python_Module_Numpy25.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy25.png)
 
 # Ndarray 通用函数
 
@@ -263,7 +224,7 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
 * 通用函数（ufunc）是一种对ndarray中的数据执行元素级运算的函数。
 * 一元、二元通用函数实例：
 
-<img src="img/Python_Module_Numpy26.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy26.png)
 
 # Numpy 的where函数使用
 
@@ -272,7 +233,7 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
   * 当conditon的某个位置的为true时，输出x的对应位置的元素，否则选择y对应位置的元素；
   * 如果只有参数condition，则函数返回为true的元素的索引；
 
-<img src="img/Python_Module_Numpy27.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy27.png)
 
 # Ndarray 常用的统计方法
 
@@ -280,28 +241,28 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
 
 * 实例：
 
-<img src="img/Python_Module_Numpy28.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy28.png)
 
 * 用于布尔数组的统计方法：
   * sum: 统计数组/数组某一维度中的True的个数
   * any: 统计数组/数组某一维度中是否存在一个多个True
   * all: 统计数组/数组某一维度中是否都是True
 
-<img src="img/Python_Module_Numpy29.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy29.png)
 
-<img src="img/Python_Module_Numpy30.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy30.png)
 
 # Ndarray 常用的去重以及集合运算
 
 常用方法：
 
-<img src="img/Python_Module_Numpy31.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy31.png)
 
 # Ndarray 数组重塑
 
 实例：
 
-<img src="img/Python_Module_Numpy32.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy32.png)
 
 # Ndarray 数组的拆分与合并
 
@@ -309,13 +270,13 @@ ndarray\.flags返回ndarray对象的内存信息，包含以下属性：
 
 实例：
 
-<img src="img/Python_Module_Numpy33.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy33.png)
 
 # 数组的元素重复操作
 
 实例：
 
-<img src="img/Python_Module_Numpy34.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy34.png)
 
 # Numpy IO
 
@@ -345,9 +306,9 @@ fix\_imports:可选，为了方便Pyhton2中读取Python3保存的数据。
 
 <span style="color:#B51600"> _可以使用_ </span>  <span style="color:#B51600"> _load\(\)_ </span>  <span style="color:#B51600"> _函数来读取数据：_ </span>
 
-<img src="img/Python_Module_Numpy35.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy35.png)
 
-<img src="img/Python_Module_Numpy36.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy36.png)
 
 numpy\.savez\(\)函数将多个数组保存到以npz为扩展名的文件中。
 
@@ -361,7 +322,7 @@ args:要保存的数组，可以使用关键字参数为数组起一个名字，
 
 kwds:要保存的数组使用关键字名称。
 
-<img src="img/Python_Module_Numpy37.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy37.png)
 
 <span style="color:#333333">numpy\.savetxt\(\)</span>  <span style="color:#333333">函数是以简单的文本文件格式存储数据，对应的使用</span>  <span style="color:#333333">loadtxt\(\)</span>  <span style="color:#333333">函数来获取数据。</span>
 
@@ -371,7 +332,7 @@ kwds:要保存的数组使用关键字名称。
 
 <span style="color:#333333">参数</span>  <span style="color:#333333">delimiter</span>  <span style="color:#333333">可以指定各种分隔符、针对特定列的转换器函数、需要跳过的行数等。</span>
 
-<img src="img/Python_Module_Numpy38.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy38.png)
 
 
 
@@ -386,7 +347,7 @@ import numpy\.linalg模块。线性代数（linear algebra）
 
 实例：
 
-<img src="img/Python_Module_Numpy39.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy39.png)
 
 # Numpy 中的随机数生成
 
@@ -396,7 +357,7 @@ import numpy\.random模块。
 
 实例：
 
-<img src="img/Python_Module_Numpy40.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy40.png)
 
 # Python Module Matplotlib
 
@@ -426,18 +387,18 @@ import numpy\.random模块。
 
 <span style="color:#333333">实例：</span>
 
-<img src="img/Python_Module_Numpy41.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy41.png)
 
-<img src="img/Python_Module_Numpy42.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy42.png)
 
 * <span style="color:#333333">图形文字显示实例：</span>
   * Matplotlib默认情况不支持中文，我们可以使用以下简单的方法来解决：
   * 首先下载字体（注意系统）： <span style="color:#017100"> _https://www.fontpalace.com/font-details/SimHei/</span>
   * SimHei\.ttf文件放在当前执行的代码文件中：
 
-<img src="img/Python_Module_Numpy43.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy43.png)
 
-<img src="img/Python_Module_Numpy44.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy44.png)
 
   * 作为线性图的替代，可以通过向plot\(\)函数添加格式字符串来显示离散值。 可以使用以下格式化字符。
 
@@ -447,30 +408,30 @@ import numpy\.random模块。
 
   * 使用ob作为plot\(\)函数中的格式字符串。
 
-<img src="img/Python_Module_Numpy45.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy45.png)
 
-<img src="img/Python_Module_Numpy46.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy46.png)
 
 * <span style="color:#333333">绘制正弦波实例：</span>
 
-<img src="img/Python_Module_Numpy47.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy47.png)
 
-<img src="img/Python_Module_Numpy48.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy48.png)
 
 * <span style="color:#333333">subplot\(\)</span>  <span style="color:#333333">函数允许你在同一图中绘制不同的东西。</span>
 * <span style="color:#333333">以下实例绘制正弦和余弦值</span>  <span style="color:#333333">:</span>
 
-<img src="img/Python_Module_Numpy49.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy49.png)
 
-<img src="img/Python_Module_Numpy50.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy50.png)
 
 <span style="color:#333333">bar\(\) pyplot</span>  <span style="color:#333333">子模块提供</span>  <span style="color:#333333">bar\(\)</span>  <span style="color:#333333">函数来生成条形图。</span>
 
 <span style="color:#333333">以下实例生成两组</span>  <span style="color:#333333">x</span>  <span style="color:#333333">和</span>  <span style="color:#333333">y</span>  <span style="color:#333333">数组的条形图。</span>
 
-<img src="img/Python_Module_Numpy51.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy51.png)
 
-<img src="img/Python_Module_Numpy52.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy52.png)
 
 numpy\.histogram\(\)函数是数据的频率分布的图形表示。 水平尺寸相等的矩形对应于类间隔，称为bin，变量height对应于频率。
 
@@ -482,11 +443,11 @@ numpy\.histogram\(a, bins=10, range=None, normed=False, weights=None, density=No
 
 <span style="color:#333333">实例 ：</span>
 
-<img src="img/Python_Module_Numpy53.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy53.png)
 
 <span style="color:#333333">plt\(\) Matplotlib</span>  <span style="color:#333333">可以将直方图的数字表示转换为图形。</span>  <span style="color:#333333">pyplot</span>  <span style="color:#333333">子模块的</span>  <span style="color:#333333">plt\(\)</span>  <span style="color:#333333">函数将包含数据和</span>  <span style="color:#333333">bin</span>  <span style="color:#333333">数组的数组作为参数，并转换为直方图。</span>
 
-<img src="img/Python_Module_Numpy54.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy54.png)
 
-<img src="img/Python_Module_Numpy55.png" width=500px />
+![](Python_Module_Numpy/img/Python_Module_Numpy55.png)
 

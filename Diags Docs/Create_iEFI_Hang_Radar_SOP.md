@@ -1,36 +1,22 @@
-![docDingDong300](./img/docDingDong300.png)
-
-# Create iEFI Hang Radar SOP
-
-May 22, 2020
-
-Authors:
-Anna Ning         Anna.Ning@quantacn.com
-
-# Content
-
-[TOC]
+---
+author: 
+  name: Anna Ning
+  email: Anna.Ning@quantacn.com
+date: 2020-5-22
+title: Create iEFI Hang Radar SOP
+---
+![docDingDong300](Diags_Core_Dump_SOP/img/docDingDong300.png)
 
 # UNIT Hang/Stack/Panic Process Flow
 
-```flow
-st=>start: UNIT Hang/Stack/Panic
-e=>end: Event Finish
-op1=>operation: CoreOS coredump action and check the unit
-cond1=>condition: is iEFI issue?
-others1=>operation: Need CoreOS to do
-op3=>operation: Create radar and upload coredump
-op4=>operation: Reflow unit
-st->op1(right)
-op1->cond1(yes)->op3->op4->e
-cond1(no,right)->others1->op4->e
-```
+![](Diags_Core_Dump_SOP/hang.png)
 
 
 
 # How to Create an iEFI Hang Radar?
-## Steps
-<img src="./img/create_radar.png" alt="create_radar" style="zoom:30%;" />
+
+
+![](Diags_Core_Dump_SOP/img/create_radar.png)
 
 ## Radar Description
 ### Title
@@ -81,6 +67,6 @@ cond1(no,right)->others1->op4->e
 * Other logs as shown in the following pictures
 ```
 
-![folder_1](./img/folder_1.png)
+![folder_1](Diags_Core_Dump_SOP/img/folder_1.png)
 
-![folder_2](./img/folder_2.png)
+![folder_2](Diags_Core_Dump_SOP/img/folder_2.png)
