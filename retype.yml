@@ -32,6 +32,6 @@ links:
     target: blank
 
   - text: GitHub
-    link: https://github.com/hwtedoc/hwtedoc.github.io/issues
+    link: https://github.com/hwtedoc/hwtedoc.github.io/
     icon: mark-github
     target: blank
