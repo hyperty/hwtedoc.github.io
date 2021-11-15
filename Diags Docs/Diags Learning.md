@@ -12,7 +12,7 @@ title: Diags Learning
     * 蓝色窗口表示Astro正在跑测试
     * 绿色窗口表示Astro已经跑完而且测试结果是Pass
     * 红色窗口表示Astro跑完了 而且测试结果有Fail item
-  * 在gOS串口下輸入astro status sequence \(Ex: astro status burnin\)
+  * 在gOS串口下輸入`astro status sequence` \(Ex: astro status burnin\)
     * 在gOS串口輸入的話會有時間戳記
     * 在MacOS底下透過eos\-ssh輸入的話沒有時間戳記
 
@@ -40,9 +40,9 @@ title: Diags Learning
 
 * 另外一种停止Astro的方法是：
   * 连接Potassium,强制按住机器Power键，直到连接31337port窗口吐出Log，然后松开power键，然后按住Enter键，使得机器进入Recovery mode
-  * _当机器处于Recovery mode时_  _，_  <span style="color:#0433FF">printenv</span>  _查看机器当前的环境和参数设置_
-  * <span style="color:#0433FF">setenv boot\-args="xxx"</span>  _\(Remove astro=burnin\)_
-  * <span style="color:#0433FF">printenv</span>
+  * _当机器处于Recovery mode时, `printenv`查看机器当前的环境和参数设置_
+  * `setenv boot\-args="xxx"` (Remove astro=burnin\)
+  * `printenv`
 
 ![](Diags_learning/img/0905Nancy6.png)
 
