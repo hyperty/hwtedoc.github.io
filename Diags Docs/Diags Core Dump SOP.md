@@ -10,7 +10,7 @@ title: Diags Core Dump SOP
 
 # Collection steps
 
-1. Enter astris in local terminal 
+1. Enter `astris` in local terminal 
 
 ```
    MCA9060168:~ sda$ astris
@@ -38,19 +38,19 @@ title: Diags Core Dump SOP
    NO CPU > 
 ```
 
-2. Create /tmp/efi_coredumps in the specified path to store the collected core dump files
+2. Create `/tmp/efi_coredumps` in the specified path to store the collected core dump files
 
 ```
    /Users/sda/tmp/efi_coredumps/
 ```
 
-3. Enter efi_coredump -debug /Users/sda/tmp/efi_coredumps/iefi.core in local terminal to collect iEFI core dump
+3. Enter `efi_coredump -debug /Users/sda/tmp/efi_coredumps/iefi.core` in local terminal to collect iEFI core dump
 
 ```
    NO CPU > efi_coredump -debug /Users/sda/tmp/efi_coredumps/iefi.core
 ```
 
-4. Wait for the core dump collection to return to the NO CPU> flag
+4. Wait for the core dump collection to return to the `NO CPU>` flag
 
 
 ```

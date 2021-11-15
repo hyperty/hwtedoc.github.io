@@ -5,7 +5,7 @@ author:
 date: 2020-5-22
 title: Create iEFI Hang Radar SOP
 ---
-![docDingDong300](Diags_Core_Dump_SOP/img/docDingDong300.png)
+![](Diags_Core_Dump_SOP/img/docDingDong300.png)
 
 # UNIT Hang/Stack/Panic Process Flow
 
